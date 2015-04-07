@@ -1,4 +1,5 @@
-package ee.varh1i.main;
+package ee.varh1i.main.factories;
+
 
 public class FactoryProducer {
 	public static AbstractFactory getFactory(String choice){

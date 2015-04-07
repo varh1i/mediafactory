@@ -1,4 +1,4 @@
-package ee.varh1i.main;
+package ee.varh1i.main.factories;
 
 import ee.varh1i.main.model.Media;
 import ee.varh1i.main.model.Music;
