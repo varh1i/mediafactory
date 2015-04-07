@@ -3,8 +3,9 @@ package ee.varh1i.main;
 import ee.varh1i.main.model.Media;
 import ee.varh1i.main.model.Music;
 import ee.varh1i.main.model.Video;
+import ee.varh1i.main.type.Type;
 
-public class MediaFactory {
+public class MediaFactory extends AbstractFactory {
 
 	public Media getMedia(String mediaType){
 		if(mediaType == null){
@@ -16,6 +17,11 @@ public class MediaFactory {
 		if(mediaType.equalsIgnoreCase("video")){
 			return new Video();
 		}
+		return null;
+	}
+
+	@Override
+	public Type getType(String type) {
 		return null;
 	}
 	

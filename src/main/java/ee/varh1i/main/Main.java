@@ -5,7 +5,9 @@ import ee.varh1i.main.model.Media;
 public class Main {
 
 	public static void main(String[] args) {
-		MediaFactory mediaFactory = new MediaFactory();
+		
+		
+		AbstractFactory mediaFactory = FactoryProducer.getFactory("media");
 		Media media1 = mediaFactory.getMedia("music");
 		media1.play();
 		Media media2 = mediaFactory.getMedia("video");
