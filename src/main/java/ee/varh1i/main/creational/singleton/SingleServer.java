@@ -1,4 +1,4 @@
-package ee.varh1i.main;
+package ee.varh1i.main.creational.singleton;
 
 public class SingleServer {
 

@@ -1,4 +1,4 @@
-package ee.varh1i.main.factories;
+package ee.varh1i.main.creational.factories;
 
 import ee.varh1i.main.model.Media;
 import ee.varh1i.main.type.Fun;

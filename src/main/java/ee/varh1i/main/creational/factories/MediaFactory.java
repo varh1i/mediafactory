@@ -1,8 +1,8 @@
-package ee.varh1i.main.factories;
+package ee.varh1i.main.creational.factories;
 
+import ee.varh1i.main.model.FunnyVideo;
 import ee.varh1i.main.model.Media;
-import ee.varh1i.main.model.Music;
-import ee.varh1i.main.model.Video;
+import ee.varh1i.main.model.PopMusic;
 import ee.varh1i.main.type.Type;
 
 public class MediaFactory extends AbstractFactory {
@@ -12,10 +12,10 @@ public class MediaFactory extends AbstractFactory {
 			return null;
 		}
 		if(mediaType.equalsIgnoreCase("music")){
-			return new Music();
+			return new PopMusic();
 		}
 		if(mediaType.equalsIgnoreCase("video")){
-			return new Video();
+			return new FunnyVideo();
 		}
 		return null;
 	}

@@ -1,4 +1,5 @@
-package ee.varh1i.main.factories;
+package ee.varh1i.main.creational.factories;
+
 
 
 public class FactoryProducer {
