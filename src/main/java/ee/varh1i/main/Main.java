@@ -1,23 +1,21 @@
 package ee.varh1i.main;
 
-import ee.varh1i.main.creational.builder.MovieBuilder;
-import ee.varh1i.main.model.Movie;
+import ee.varh1i.main.creational.prototype.Car;
+import ee.varh1i.main.creational.prototype.CarCache;
 
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		MovieBuilder movieBuilder = new MovieBuilder();
-		Movie movie = movieBuilder.makeComedyMovie();
-		System.out.println("Comedy");
-		movie.showItems();
-		System.out.println("Total cost: " + movie.getCost());
+		CarCache.loadCache();
 		
-		movie = movieBuilder.makeFunnyMovie();
-		System.out.println("\n\nFunny");
-		movie.showItems();
-		System.out.println("Total cost: " + movie.getCost());
+		Car bmw = CarCache.getCar("1");
+		System.out.println("Car type: " + bmw.getType());
+		
+		bmw.setId("3");
+		bmw = CarCache.getCar("1");
+		System.out.println("Car type: " + bmw.getType());
 		
 	}
 
