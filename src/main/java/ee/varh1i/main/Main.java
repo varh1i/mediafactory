@@ -1,17 +1,20 @@
 package ee.varh1i.main;
 
-import ee.varh1i.main.creational.adapter.AudioPlayer;
+import ee.varh1i.main.structural.bridge.Content;
+import ee.varh1i.main.structural.bridge.Media;
+import ee.varh1i.main.structural.bridge.Music;
+import ee.varh1i.main.structural.bridge.Video;
 
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		AudioPlayer player = new AudioPlayer();
-		player.play("mp3", "How bad you want it.mp3");
-		player.play("mp4", "cats.mp3");
-		player.play("vlc", "GameOfThronesS05E04.vlc");
-		player.play("avi", "GameOfThronesS05E05.avi");
+		Content video = new Media("cat.avi", new Video());
+		
+		Content music = new Media("wave.mp3", new Music());
+		video.play();
+		music.play();
 		
 	}
 
