@@ -1,9 +1,9 @@
 package ee.varh1i.main.creational.factories;
 
+import ee.varh1i.main.creational.factories.type.Fun;
+import ee.varh1i.main.creational.factories.type.Rock;
+import ee.varh1i.main.creational.factories.type.Type;
 import ee.varh1i.main.model.Media;
-import ee.varh1i.main.type.Fun;
-import ee.varh1i.main.type.Rock;
-import ee.varh1i.main.type.Type;
 
 public class TypeFactory extends AbstractFactory {
 
